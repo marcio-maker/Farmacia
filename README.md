@@ -1,2 +1,1 @@
-# Farmacia
-farmacia
+https://marcio-maker.github.io/Farmacia/
