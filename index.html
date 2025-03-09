@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaApp</title>
+    <link rel="stylesheet" href="farms.css">
+</head>
+<body>
+    <header>
+        <h1>PharmaApp</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#reminders">Lembretes</a></li>
+                <li><a href="#order-history">Histórico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Bem-vindo ao PharmaApp</h2>
+            <p>Encontre os melhores produtos e medicamentos para sua saúde.</p>
+            <button id="cta-button">Ver Produtos</button>
+        </section>
+
+        <section id="products">
+            <h2>Nossos Produtos</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/R.3e8855b8380837f36e6bf047fc23f66d?rik=QKHiAeSXSVv6Hw&pid=ImgRaw&r=0" alt="Produto 1">
+                    <h3>Paracetamol</h3>
+                    <p>Alívio de dores e febre.</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="https://a-static.mlcdn.com.br/1500x1500/vitamina-c-1g-bio-c-10-comprimidos-efervescentes-imunidade-bio-c-acido-ascorbico-uniao-quimica/biotecstore2/1x9964bs/8ec914513187b9ef99ac58fba6d793bd.jpeg" alt="Produto 2">
+                    <h3>Vitamina C</h3>
+                    <p>Reforce sua imunidade.</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/OIP.O3axGpjXqsg05TzTMls9SwHaHa?rs=1&pid=ImgDetMain" alt="Produto 3">
+                    <h3>Ibuprofeno</h3>
+                    <p>Anti-inflamatório e analgésico.</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <div class="about-content">
+                <p>O PharmaApp é uma plataforma dedicada a fornecer medicamentos e produtos de saúde de alta qualidade, com entrega rápida e segura.</p>
+                <img src="https://th.bing.com/th/id/R.b76cd0a1c4c7eaff7e3e2cc823ed56b3?rik=7319W2NFfc3eAQ&pid=ImgRaw&r=0" alt="Sobre Nós">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <div class="contact-content">
+                <p>Entre em contato conosco para mais informações:</p>
+                <ul>
+                    <li>Telefone: (11) 1234-5678</li>
+                    <li>Email: contato@pharmaapp.com</li>
+                    <li>Endereço: Rua das Farmácias, 123 - São Paulo, SP</li>
+                </ul>
+                <form id="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="reminders">
+            <h2>Lembretes de Medicamentos</h2>
+            <div class="reminder-content">
+                <form id="reminder-form">
+                    <label for="medication">Medicamento:</label>
+                    <input type="text" id="medication" name="medication" required>
+                    <label for="time">Horário:</label>
+                    <input type="time" id="time" name="time" required>
+                    <button type="submit">Adicionar Lembrete</button>
+                </form>
+                <ul id="reminder-list"></ul>
+            </div>
+        </section>
+
+        <section id="order-history">
+            <h2>Histórico de Pedidos</h2>
+            <div class="order-content">
+                <ul id="order-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PharmaApp. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="farms.js"></script>
+</body>
+</html>
